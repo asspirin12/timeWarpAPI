@@ -13,7 +13,7 @@ public class TravelDemo {
             new Destination("2450: Distant Future Exploration")
         };
 
-        for (int i = 1 ; ; i++) {
+        for (int i = 1 ; i < 3; i++) {
             System.out.println("Attempting to send traveler to: " + destinations[i].getDescription());
             try {
                 TravelResult result = api.initiateTravel(traveler, destinations[i]);
